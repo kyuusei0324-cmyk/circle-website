@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  height: 70vh;
+  background: url("top.jpg") center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-top: 60px;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.member-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member {
+  width: 200px;
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
