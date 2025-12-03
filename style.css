@@ -9,24 +9,31 @@ header {
   top: 0;
   width: 100%;
   background: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+
+/* ロゴとナビを縦に並べる */
+header .inner {
+  display: flex;
+  flex-direction: column; /* ← 縦並び */
+  align-items: center;    /* 中央寄せ */
+  gap: 8px;               /* ロゴとの間隔 */
 }
 
 nav {
   display: flex;
-  flex-wrap: wrap;     /* 横幅に収まらないと折り返す */
-  gap: 20px;
+  flex-wrap: wrap;        /* ← ここで折り返し可能に */
+  gap: 15px;
+  justify-content: center; /* 中央に寄せる */
 }
 
 nav a {
-  margin-left: 0;      /* gap を使うから不要 */
   text-decoration: none;
   color: #333;
-  font-size: 15px;     /* 少し小さめに */
+  font-size: 15px;
 }
+
 
 
 .hero {
